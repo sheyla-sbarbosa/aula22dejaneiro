@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    padding:0;
+}
+.header{
+    background-color: green;
+    padding: 20px;
+    margin: 5px;
+}
+
+.nav{
+    background-color: lightgray;
+    padding: 20px;
+    margin: 5px;
+}
+
+.main{ display: flex;
+
+}
+.article{
+    background-color: blue;
+    margin:5px;
+    padding:20px;
+    width: 60%;
+}
+
+.section{
+    background-color: orange;
+    margin:5px;
+    padding:30px;
+}
+.aside{
+    background-color: purple;
+    margin: 5px;
+    padding: 30px;
+    width:40%;
+
+}
+.footer {
+            background: blue;
+            margin: 5px;
+            padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+.main{
+    display:block;
+    }
+
+    .article{
+    width:100%;
+    }
+    .aside{
+    width:100%;
+}
+}
+
+
+</style>
+<body>
+    <header class="header">
+        Hearder
+            <nav class="nav"> 
+                Nav
+            </nav>
+    </header>
+    
+
+    <main class="main">
+        <article class="article"> 
+            <section class="section">Section</section>
+            <section class="section">Section</section>
+            <section class="section">Section</section>
+        </article>
+        <aside class="aside">Aside</aside>
+    </main>
+
+<footer class="footer">Footer</footer>
+</body>
+</html>
